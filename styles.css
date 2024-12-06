@@ -154,5 +154,163 @@
     gap: 2rem;
   }
   
+  .header__container h1 {
+    position: relative;
+    isolation: isolate;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 5rem;
+    color: var(--secondary-color);
+    font-style: italic;
+    text-align: center;
+  }
   
-    
+  .header__container h1::before {
+    position: absolute;
+    content: "GROW YOUR STRENGTH";
+    top: -5rem;
+    left: -5rem;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 10rem;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+  }
+  
+  .header__container h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 5rem;
+    color: var(--text-dark);
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .header__container p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    text-align: center;
+  }
+  
+  .header__btn {
+    text-align: center;
+  }
+  
+  .header__image img {
+    max-width: 300px;
+    margin-inline: auto;
+  }
+  
+  .about {
+    overflow: hidden;
+  }
+  
+  .about__container {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .about__image {
+    position: relative;
+    isolation: isolate;
+  }
+  
+  .about__image::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    width: calc(100% - 5rem);
+    aspect-ratio: 1;
+    background-image: var(--gradient-2);
+    border-radius: 100%;
+    z-index: -1;
+  }
+  
+  .about__image img {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+  
+  .about__content .section__header::before {
+    content: "About Us";
+  }
+  
+  .about__content p {
+    margin-top: 1rem;
+    color: var(--text-light);
+  }
+  
+  .about__content p:nth-child(3) {
+    margin-bottom: 2rem;
+  }
+  
+  .service {
+    background-color: var(--text-dark);
+    overflow: hidden;
+  }
+  
+  .service__container .section__header {
+    color: var(--white);
+  }
+  
+  .service__container .section__header::before {
+    content: "Our Services";
+    color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .service__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .service__card span {
+    font-size: 2rem;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--white);
+    opacity: 0.75;
+  }
+  
+  .service__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .service__card p {
+    color: var(--text-light);
+  }
+  
+  .service__image {
+    display: none;
+  }
+  
+  .popular {
+    overflow: hidden;
+  }
+  
+  .popular__container .section__header::before {
+    content: "Popular Classes";
+  }
+  
+  .popular__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .popular__card {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--extra-light);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+  }
+  

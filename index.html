@@ -35,9 +35,28 @@
             
             <div class="nav__btns">
               
-              <button class="btn">Join Now</button>
+              <button class="btn" id="join-btn">Join Now</button>
             </div>
           </nav>
+
+          <div id="registration-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-modal">&times;</span>
+                <h2>Register</h2>
+                <form id="registration-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+          
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+          
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+          
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
 
 
           <div class="header__container" id="home">

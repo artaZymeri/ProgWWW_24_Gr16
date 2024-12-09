@@ -8,14 +8,14 @@
   
   body {
     font-family: "Arial", sans-serif;
-    background-color: #f9f8f6;
+    background-color: #ffffff;;
     color: #333;
     line-height: 1.6;
     }
   
   header {
     position: relative;
-    background-color: #f0ecec;
+    background-color: transparent;;
     color: #fff;
     padding: 20px 0;
     overflow: hidden;
@@ -27,13 +27,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     
   }
+
   
   
   .nav__logo img {
-    height: 40px;
+    height: 50px; 
+  margin-right: 10px;
   }
   
   
@@ -41,15 +43,15 @@
     display: none;
   }
   
-  .nav__links {
-    
-    list-style: none;
-    display: flex;
+  .nav__links {  
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
   }
     
   .nav__links a {
     text-decoration: none;
-    color: #d67462;
+    color: #030101;
     font-weight: 600;
   }
 
@@ -64,8 +66,8 @@
   .nav__btns .btn {
     
     border-radius: 25px;
-    background-color: #cf8b7b;
-    color: #fff;
+    background-color: #0c0402;
+    color: #e4dddd;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -76,11 +78,12 @@
     background-color: #b96651;
   }
   
+  
 /*Header Content Styles*/
 
   .header__container {
-    display: flex;
-   justify-content: space-between;
+   display: flex;
+   justify-content: flex-center;
    align-items: center;
    max-width: 1200px;
    margin: 50px auto;
@@ -99,7 +102,7 @@
   .header__container h2 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #a55445;
+    color: #0f0402;
     margin-bottom: 20px;   
   }
   
@@ -111,8 +114,8 @@
   
   .header__btn .btn {
     border-radius: 25px;
-    background-color: #d67462;
-    color: white;
+    background-color: #130b09;
+    color: rgb(240, 235, 235);
     border: none ;
     padding: 12px 25px;
     font-size: 1em;
@@ -125,9 +128,10 @@
   
   .header__image img {
     float: right;
-    width: 60%;
-    max-width: 100px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
+    margin: 60px 0 100px 0;
   }
   
   @media(max-width: 768px) {

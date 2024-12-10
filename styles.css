@@ -535,9 +535,44 @@
 }
 
 .footer__container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  display: grid;
+  gap: 4rem 2rem;
+}
+
+.footer__logo img{
+  margin-bottom: 2rem;
+  max-width: 250px;
+  color: #fff;
+}
+
+.footer__links{
+  display:grid;
+  gap: 1rem;
+}
+
+.footer__links: is(li,a){
+  color: var(--text-light);
+}
+.footer__links a:hover{
+  color: #fff;
+}
+
+.footer__links a span{
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: var(--text-light);
+  border-top: 1px solid var(--text-light);
+}
+
+.footer__bar{
+  padding:1rem;
+  font-size: .9rem
+}
+
+.footer__col h4{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .footer__col h4 {
@@ -568,7 +603,8 @@
 .footer__bar p {
   margin: 0;
 }
-  
+
+
 
   /* Modal Styles */
 /* The Modal (background) */

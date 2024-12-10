@@ -182,7 +182,9 @@
    }  /*About Section*/
 
   .about {
-    padding: 60px 20px;
+    padding: 40px;
+    margin-top: 50px; /* Adjust top margin to create space above */
+    margin-bottom: 50px;
   }
   
   .about__container {
@@ -194,9 +196,10 @@
   
   
   .about__image img {
-    width: 50%;
-    border-radius: 10px;
-    width: 250px;  /* Vendos një gjerësi të përcaktuar */
+    width: 80%; /* Adjust the percentage to your preference */
+    max-width: 600px; /* Optional: Set a maximum width to prevent it from becoming too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
   
   }
   .about__content {
@@ -205,12 +208,20 @@
   .about__content h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #ff7a00; /* Vibrant orange for headers */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .about__content p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;color: #555;
   }
+  .about__content p mark {
+    background: linear-gradient(90deg, #ff7a00, #ffaf40);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;}
+
   .about__btn .btn {
     background-color: #ff7a00;
     color: white;
@@ -218,7 +229,12 @@
     border: none;
     cursor: pointer;
   }
-  
+
+  .service {
+    margin-top: 50px; /* Adjust top margin to create space above */
+    margin-bottom: 50px; /* Adjust bottom margin to create space below */
+    padding: 20px; /* Optional padding for better spacing inside the section */
+  }
   .service {
     background-color: #bb8b83;
     overflow: hidden;
@@ -255,10 +271,13 @@
     margin-bottom: .5rem;
     font-weight: 600;
     color: #fff;
+
   }
+
   
   .service__card p {
     color: #fff;
+    
   }
   .service__image{
     display: none;
@@ -471,61 +490,63 @@
 /* Mentor Section */
 .mentor__container {
   background-color: #f9f9f9;
-  padding: 60px 20px;
+  padding: 60px 5%;
 }
 
 .mentor__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .mentor__card {
   text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s, box-shadow 0.4s;
 }
-
+.mentor__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 .mentor__card img {
   width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .mentor__card h4 {
-  font-size: 22px;
+  font-size: 1.5rem;
   margin-top: 15px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
 .mentor__card p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #777;
+  line-height: 1.6;
 }
-/* Banner Section */
-.banner {
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 20px;
+@media (max-width: 768px) {
+  .mentor__grid {
+    gap: 15px;
+  }
+
+  .mentor__card {
+    padding: 15px;
+  }
+
+  .mentor__card h4 {
+    font-size: 1.3rem;
+  }
+
+  .mentor__card p {
+    font-size: 0.9rem;
+  }
 }
 
-.banner__content h2 {
-  font-size: 36px;
-}
-
-.banner__content p {
-  font-size: 18px;
-}
-
-.banner__content a {
-  color: #ff7a00;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.banner__image img {
-  width: 50%;
-  border-radius: 10px;
-}
 
 /* Footer Section */
 .footer {

@@ -256,71 +256,188 @@
   }
   
 /* Popular Section */
-  .popular {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .popular__container {
-    text-align: center;
-  }
-  
-  .popular__grid {
-    margin-top: 40px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .popular__card {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-    box-shadow: opx 4px 6px rgba(0, 0, 0, 0.05);
-    
-  }
-  .popular__card h4 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .popular__card p {
-    font-size: 14px;
-  }
-  
-  .popular__card span i {
-    font-size: 24px;
-    color: #ff7a00;
-  }
-  
-  /* Facility Section */
+.popular {
+  padding: 60px 20px;
+  background-color: #b96651;
+}
+
+.popular__container {
+  text-align: center;
+}
+
+.popular__grid {
+  margin-top: 40px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.popular__card {
+  padding: 30px; /* Increase padding for better spacing */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.popular__card:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7; 
+}
+
+.popular__card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333; 
+  margin-bottom: 15px;
+}
+
+.popular__card p {
+  font-size: 16px;
+  color: #555; 
+  line-height: 1.6; 
+  margin-bottom: 20px;
+}
+
+.popular__card span i {
+  font-size: 28px;
+  color: #ff7a00; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.popular__card:hover span i {
+  color: #d85f02; 
+  transform: scale(1.1); 
+}
+
+.popular__card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  width: 75%; /* Wider space for text */
+}
+
+.popular__card .card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff7a00; 
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for icon */
+}
+
+.popular__card:hover .card-icon {
+  background-color: #d85f02; /* Darker icon background on hover */
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+.popular__card .card-icon i {
+  color: #fff; /
+  font-size: 30px;
+}
+
+ /* Facility Section */
+.facility__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 30px;
+  gap: 50px;
+  align-items: center;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1); /* Gradient background */
+  border-radius: 20px; /* Larger border radius for a softer, modern feel */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for more depth */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.facility__container:hover {
+  transform: scale(1.02); 
+}
+
+.facility__image img {
+  width: 100%;
+  max-width: 600px; /* Max width of the image */
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Strong shadow for more depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.facility__image img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.facility__content {
+  width: 50%;
+  color: #333;
+  transition: color 0.3s ease; 
+}
+
+.facility__content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #5c271e;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
+  transition: color 0.3s ease, text-shadow 0.3s ease; 
+}
+
+.facility__content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+  max-width: 500px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.facility__content:hover h2 {
+  color: #ff7a00; 
+  text-shadow: 3px 3px 10px rgba(255, 122, 0, 0.2); /* Glowing effect on hover */
+}
+
+.facility__content:hover p {
+  color: #333; /* Darken text color on hover */
+}
+
+@media (max-width: 768px) {
   .facility__container {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
   }
-  
+
   .facility__image img {
-    width: 50%;
-    border-radius: 10px;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-  
+
   .facility__content {
-    width: 50%;
+    width: 100%;
   }
-  
+
   .facility__content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 30px;
   }
-  
+
   .facility__content p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
   }
-  /* Mentor Section */
+}
+
+
+/* Mentor Section */
 .mentor__container {
   background-color: #f9f9f9;
   padding: 60px 20px;

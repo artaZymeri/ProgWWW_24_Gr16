@@ -106,12 +106,66 @@
         <li>Start Your Fitness Journey</li>
         <li>Track Your Progress and Stay Motivated</li>
       </ol>
-          <div class="about__btn">
-            <button class="btn"><b>Get Started</b></button>
-          </div>
-        </div>
-      </div>
+      <div class="about__btn">
+        <button class="btn" id="get-started-btn"><b>Get Started</b></button>
     </div>
+</div>
+</div>
+</div>
+
+<!-- Modal container for the "Get Started" form -->
+<div id="get-started-modal" class="modal">
+<div class="modal-content">
+<span class="close-btn" id="close-get-started-modal">&times;</span>
+<h2>Get Started</h2>
+<form id="get-started-form">
+    <!-- Step 1: Sign Up for a Free Consultation -->
+    <div class="form-step" id="step-1">
+        <h3>Step 1: Sign Up for a Free Consultation</h3>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- Step 2: Choose Your Fitness Program -->
+    <div class="form-step" id="step-2">
+        <h3>Step 2: Choose Your Fitness Program</h3>
+        <label for="fitness-program">Select a Program</label>
+        <select id="fitness-program" name="fitness-program" required>
+            <option value="cardio">Cardio Strength</option>
+            <option value="weight-training">Weight Training</option>
+            <option value="yoga">Yoga for Flexibility</option>
+            <option value="hiit">HIIT</option>
+        </select>
+    </div>
+
+    <!-- Step 3: Meet with Your Trainer -->
+    <div class="form-step" id="step-3">
+        <h3>Step 3: Meet with Your Trainer</h3>
+        <label for="trainer-name">Trainer Name</label>
+        <input type="text" id="trainer-name" name="trainer-name" required>
+    </div>
+
+    <!-- Step 4: Start Your Fitness Journey -->
+    <div class="form-step" id="step-4">
+        <h3>Step 4: Start Your Fitness Journey</h3>
+        <label for="start-date">Preferred Start Date</label>
+        <input type="date" id="start-date" name="start-date" required>
+    </div>
+
+    <!-- Step 5: Track Your Progress and Stay Motivated -->
+    <div class="form-step" id="step-5">
+        <h3>Step 5: Track Your Progress and Stay Motivated</h3>
+        <textarea id="motivation" name="motivation" required placeholder="How will you stay motivated?"></textarea>
+    </div>
+
+    <button type="submit">Register</button>
+</form>
+</div>
+</div>
+
 
 
     <section class="service" id="service">

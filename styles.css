@@ -368,8 +368,13 @@
 }
 
 .popular__card .card-icon i {
+<<<<<<< HEAD
   color: #fff; 
   font-size: about;
+=======
+  color: #fff;
+  font-size: 30px;
+>>>>>>> bc950c6867c70656ce3edde383a5448eb7bf857d
 }
 
  /* Facility Section */
@@ -603,3 +608,132 @@
   cursor: pointer;
 }
 
+/* Modal Styles */
+.modal {
+  display: none;  /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);  /* Darker background for better focus */
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out; /* Smooth fade-in animation */
+}
+
+/* Animation for the modal content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.close-btn {
+  color: #e74c3c;  /* Red color for close button */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #c0392b;  /* Darker red when hovered */
+  text-decoration: none;
+}
+
+/* Modal Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;  /* Darker text for headings */
+}
+
+label {
+  font-size: 14px;
+  color: #34495e;  /* Slightly lighter color for labels */
+  margin-bottom: 5px;
+}
+
+/* Inputs & Select */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;  /* Light background for input fields */
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+select {
+  background-color: #f9f9f9;
+}
+
+/* Button */
+button[type="submit"],
+button[type="button"] {
+  padding: 12px 20px;
+  background-color: #27ae60;  /* Green color for buttons */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #2ecc71;  /* Lighter green on hover */
+  transform: translateY(-2px);  /* Slight lift effect */
+}
+
+button[type="submit"]:active,
+button[type="button"]:active {
+  transform: translateY(0);  /* Reset the lift effect on click */
+}
+
+/* Modal Content Padding */
+.modal-content {
+  padding: 25px;
+}

@@ -20,3 +20,20 @@ window.addEventListener('click', (event) => {
     }
 });
 
+
+
+        document.getElementById('get-started-btn').addEventListener('click', function() {
+            document.getElementById('get-started-modal').style.display = 'block';
+        });
+
+        // Close the modal when the close button is clicked
+        document.getElementById('close-get-started-modal').addEventListener('click', function() {
+            document.getElementById('get-started-modal').style.display = 'none';
+        });
+
+        // Close the modal when clicking outside of it
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('get-started-modal')) {
+                document.getElementById('get-started-modal').style.display = 'none';
+            }
+        });

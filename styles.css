@@ -189,12 +189,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     }
   
   
   .about__image img {
     width: 50%;
     border-radius: 10px;
+    width: 250px;  /* Vendos një gjerësi të përcaktuar */
+  
   }
   .about__content {
     width: 50%;
@@ -217,42 +220,65 @@
   }
   
   .service {
-    background-color: #fff;
-    padding: 60px 20px;;
+    background-color: #bb8b83;
+    overflow: hidden;
   }
   
-  .service__container {
-    text-align: center;
+  .service__container .section__header {
+    color: #fff;
+
+  }
+
+  .service__container .section__header::before{
+    content:"Our Services";
+    color:#333;
   }
   
   
   .service__grid {
+    margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+    gap:5px;
+
   }
-  .service__card {
-    background-color: #f5f5f5;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-  }
+ 
   .service__card span {
-    font-size: 30px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    opacity: 0.75;
   }
   
   .service__card h4 {
-    font-size: 22px;
-  margin-bottom: 15px;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    color: #fff;
   }
   
   .service__card p {
-    font-size: 16px;
-  line-height: 1.5;
+    color: #fff;
+  }
+  .service__image{
+    display: none;
+  }
+
+  @media(width>1024px){
+    .service__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .service__image{
+      position: center;
+      isolation: isolate;
+      display: flex;
+      height: 75%;
+      width: 75%;
+      grid-area: 1/2/3/3;
+      
+
+    }
+    
   }
   
 /* Popular Section */
@@ -342,8 +368,8 @@
 }
 
 .popular__card .card-icon i {
-  color: #fff; /
-  font-size: 30px;
+  color: #fff; 
+  font-size: about;
 }
 
  /* Facility Section */

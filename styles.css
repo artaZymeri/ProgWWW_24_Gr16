@@ -1,18 +1,14 @@
- 
-  * {
+ * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-
-  
   body {
     font-family: "Arial", sans-serif;
     background-color: #ffffff;;
     color: #333;
     line-height: 1.6;
     }
-  
   header {
     position: relative;
     background-color: transparent;;
@@ -20,7 +16,6 @@
     padding: 20px 0;
     overflow: hidden;
   }
-  
   nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,19 +25,10 @@
     padding: 10px 20px;
     
   }
-
-  
-  
   .nav__logo img {
     height: 50px; 
   margin-right: 10px;
   }
-  
-  
-  .nav__menu__btn {
-    display: none;
-  }
-  
   .nav__links {  
   list-style: none;
   display: flex;
@@ -80,8 +66,7 @@
   
   
 /*Header Content Styles*/
-
-  .header__container {
+ .header__container {
    display: flex;
    justify-content: flex-center;
    align-items: center;
@@ -154,52 +139,8 @@
     margin: 60px 0 100px 0;
   }
   
-  @media(max-width: 768px) {
-    .nav__links{
-      display: none;
-      position: absolute;
-      top: 80px;
-      right: 20px;
-      background-color: #333;
-      padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-      }
 
-    .nav__menu__btn{
-      display: block;
-    }
-
-    .nav__menu__btn i{
-      font-size: 30px;
-      color: #fff;
-    }
-
-    .header__container{
-      flex-direction: column;
-      text-align: center;
-
-    }
-
-    .header__image{
-      display: none;
-    }
-
-    .about__container{
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .service__grid, 
-    .popular__grid{
-      flex-direction: column;
-    }
-    .facility__container,
-    .mentor__grid {
-    flex-direction: column;
-    text-align: center;
-    }
-   }  /*About Section*/
+  /*About Section*/
 
   .about {
     padding: 40px;
@@ -270,32 +211,32 @@
   }
 
   .service {
-    background-color: #bb8b83;
+    background-color: #b96651;
     overflow: hidden;
     margin: 0; 
-    padding: 1rem; 
-    min-height: 100vh; 
+    padding: 2rem; 
+    min-height: 100vh;
+    margin-bottom: 0; 
   }
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 1em; 
   }
-  .service {
-    margin-bottom: 0; 
-  }
-  .service {
-    background-color: #dfbeb8;
-    overflow: hidden;
-  }
-  
   .service__container .section__header {
-    color: #fff;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
 
   }
 
   .service__container .section__header::before{
-    content:"Our Services";
-    color:#333;
+  content:"Our Services";
+  display: block;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   }
   
   
@@ -305,26 +246,39 @@
     gap:2rem;
 
   }
+  .service__card {
+    background-color: #f0b3a4; /* White background for cards */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service__card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  background-color: #f9f9f9;}
  
   .service__card span {
     font-size: 2rem;
     font-weight: 800;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #333;
     opacity: 0.75;
+    display: block;
+  margin-bottom: 1rem;
   }
   
   .service__card h4 {
     font-size: 1.2rem;
     margin-bottom: .5rem;
     font-weight: 600;
-    color: #fff;
+    color: #333;
 
   }
 
   
   .service__card p {
-    color: #fff;
+    color: #333;
     
   }
   .service__image{
@@ -345,16 +299,21 @@
     .service__image{
       
         position: relative;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
         isolation: isolate;
-        display: flex;
+        display:block;
         height: 100%;
         width: 100%;
         grid-area: 1/2/3/3;
+        border-radius: 10px;
+        overflow: hidden;
     }
     .service__image img{
-      position: relative;
-      height: 80%;
-      width: auto;
+      max-height: 100%; /* Prevents image from stretching beyond the container height */
+      max-width: 100%; /* Prevents image from stretching beyond the container width */
+      object-fit: contain; /* Ensures the image maintains its aspect ratio */
+      border-radius: 10px;
     }
   }
   
@@ -514,32 +473,6 @@
   color: #333; /* Darken text color on hover */
 }
 
-@media (max-width: 768px) {
-  .facility__container {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .facility__image img {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .facility__content {
-    width: 100%;
-  }
-
-  .facility__content h2 {
-    font-size: 30px;
-  }
-
-  .facility__content p {
-    font-size: 16px;
-  }
-}
-
-
 /* Mentor Section */
 .mentor__container {
   background-color: #f9f9f9;
@@ -582,24 +515,6 @@
   color: #777;
   line-height: 1.6;
 }
-@media (max-width: 768px) {
-  .mentor__grid {
-    gap: 15px;
-  }
-
-  .mentor__card {
-    padding: 15px;
-  }
-
-  .mentor__card h4 {
-    font-size: 1.3rem;
-  }
-
-  .mentor__card p {
-    font-size: 0.9rem;
-  }
-}
-
 
 /* Footer Section */
 .footer {
@@ -649,21 +564,7 @@
   color: #b96651
 }
 
-
-.footer__bar {
-  text-align: center;
-  background-color: #222;
-  padding: 15px 0;
-  font-size: 14px;
-  border-top: 1px solid #444;
-}
-
-.footer__bar p {
-  margin: 0;
-  color: #aaa
-}
   /* Modal Styles */
-/* The Modal (background) */
 .modal {
   display: none;  /* Hidden by default */
   position: fixed;
@@ -948,3 +849,5 @@ button[type="button"]:active {
   padding: 40px 20px;
   background-color: #f9f9f9;
 }
+
+

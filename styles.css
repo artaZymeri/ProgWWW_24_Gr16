@@ -271,16 +271,16 @@
   .service {
     background-color: #bb8b83;
     overflow: hidden;
-    margin: 0; /* Ensure no extra margins causing the cutoff */
-    padding: 1rem; /* Adjust inner spacing */
-    min-height: 100vh; /* Ensures the section takes up at least the full viewport */
+    margin: 0; 
+    padding: 1rem; 
+    min-height: 100vh; 
   }
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 1em; /* Adjust based on your header's height */
+    scroll-padding-top: 1em; 
   }
   .service {
-    margin-bottom: 0; /* Ensures no additional space at the bottom */
+    margin-bottom: 0; 
   }
   .service {
     background-color: #bb8b83;
@@ -467,7 +467,7 @@
 
 .facility__image img {
   width: 100%;
-  max-width: 600px; /* Max width of the image */
+  max-width: 600px; 
   border-radius: 20px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Strong shadow for more depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
@@ -859,4 +859,119 @@ button[type="button"]:active {
 /* Modal Content Padding */
 .modal-content {
   padding: 25px;
+}
+
+
+.testimonials {
+  padding: 50px 20px;
+  background-color: #f4f7fb;
+  text-align: center;
+  border-radius: 8px;
+  margin: 40px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titulli i Seksionit */
+.section__header {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Stili i Tabelës së Testimonials */
+.testimonials-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Stili për Titujt e Tabelës */
+.testimonials-table th {
+  background-color: #2d3e50;
+  color: white;
+  font-size: 1.1em;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Stili për Rreshtat e Tabelës */
+.testimonials-table td {
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 1em;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+}
+
+.testimonials-table td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Ndryshimi i Ngjyrës kur kaloni me miun mbi rreshtin */
+.testimonials-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Stili për rreshtat e tabelës me ndihmën e alternuar */
+.testimonials-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Përmirësimi i përgjithshëm për tabelën */
+.testimonials-table th, .testimonials-table td {
+  border-radius: 4px;
+}
+
+/* Styling for Diet Plans Table */
+.diet-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.diet-table th, .diet-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.diet-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+.diet-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.diet-table td {
+  color: #2d3e50;
+  font-size: 16px;
+}
+
+/* Optional: Add styling to the section header */
+.diet-plans h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Optional: Add some padding around the section */
+.diet-plans {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }

@@ -21,19 +21,24 @@ window.addEventListener('click', (event) => {
 });
 
 
+// Get modal element and buttons for Get Started form
+const getStartedModal = document.getElementById('get-started-modal');
+const getStartedBtn = document.getElementById('get-started-btn');  // Ensure this button exists in your HTML
+const closeGetStartedModalBtn = document.getElementById('close-get-started-modal');
 
-        document.getElementById('get-started-btn').addEventListener('click', function() {
-            document.getElementById('get-started-modal').style.display = 'block';
-        });
+// Open the Get Started modal when the button is clicked
+getStartedBtn.addEventListener('click', function() {
+    getStartedModal.style.display = 'block';  // Show the modal
+});
 
-        // Close the modal when the close button is clicked
-        document.getElementById('close-get-started-modal').addEventListener('click', function() {
-            document.getElementById('get-started-modal').style.display = 'none';
-        });
+// Close the Get Started modal when the close button is clicked
+closeGetStartedModalBtn.addEventListener('click', function() {
+    getStartedModal.style.display = 'none';  // Hide the modal
+});
 
-        // Close the modal when clicking outside of it
-        window.addEventListener('click', function(event) {
-            if (event.target == document.getElementById('get-started-modal')) {
-                document.getElementById('get-started-modal').style.display = 'none';
-            }
-        });
+// Close the modal if the user clicks anywhere outside of the modal content
+window.addEventListener('click', function(event) {
+    if (event.target === getStartedModal) {
+        getStartedModal.style.display = 'none';  // Hide the modal
+    }
+});

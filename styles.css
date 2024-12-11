@@ -728,6 +728,10 @@
 }
 
 /* Modal Styles */
+#get-started-modal {
+  display: none;  /* Hide the modal by default */
+  /* Other styles for the modal, such as positioning, background color, etc. */
+}
 .modal {
   display: none;  /* Hidden by default */
   position: fixed;

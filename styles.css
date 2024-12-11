@@ -37,7 +37,7 @@
     
   .nav__links a {
     text-decoration: none;
-    color: #b96651;
+    color: #0a0504;
     font-weight: 600;
   }
 
@@ -87,7 +87,7 @@
   .header__container h2 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #b96651;
+    color: #0c0706;
     margin-bottom: 20px;   
   }
   
@@ -99,8 +99,8 @@
   
   .header__btn .btn {
     border-radius: 25px;
-    background-color: #b96651;
-    color: rgb(240, 235, 235);
+    background-color: #130b09;
+    color: rgb(243, 219, 219);
     border: none ;
     padding: 12px 25px;
     font-size: 1em;
@@ -202,7 +202,7 @@
     border-radius: 3px;}
 
   .about__btn .btn {
-    background-color: #b96651;
+    background-color: #070404;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -211,7 +211,7 @@
   }
 
   .service {
-    background-color: #b96651;
+    background-color: #dd9887;
     overflow: hidden;
     margin: 0; 
     padding: 2rem; 
@@ -247,7 +247,7 @@
 
   }
   .service__card {
-    background-color: #f0b3a4; /* White background for cards */
+    background-color: #ebbeb3; /* White background for cards */
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
